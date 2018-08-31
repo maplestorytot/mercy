@@ -1,0 +1,34 @@
+<div >
+    <mat-card-title>
+        {{post.titleMain}} created by <!--{{post.creator}}-->
+       </mat-card-title>
+</div>
+
+ <p>post number#: <!--{{post.id}}--></p>
+
+ <ul>
+
+<li >
+<mat-card >
+ <mat-card-subtitle>  {{post.titleFirst}}</mat-card-subtitle>
+ <mat-card-content >  {{post.descriptionFirst}}</mat-card-content>
+ <img mat-card-image [src]='post.imagePathFirst' [alt]='post.titleFirst'>
+<br>
+<p >Current Likes: {{post.likesFirst}}</p>
+  <button color="primary" mat-button>Like</button>
+</mat-card>
+</li>
+<span class="spacer"></span>
+
+<li >
+    <mat-card>
+  <mat-card-subtitle>  {{post.titleSecond}}  </mat-card-subtitle>
+  <mat-card-content>  {{post.descriptionSecond}} </mat-card-content>
+  <img mat-card-image [src]='post.imagePathSecond' [alt]='post.titleSecond'>
+  <br>
+  <p>Current Likes: {{post.likesSecond}}</p>
+  <button color="accent" mat-button>Like</button>
+</mat-card>
+</li>
+</ul>
+
